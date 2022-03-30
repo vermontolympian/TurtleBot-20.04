@@ -6,11 +6,11 @@
 
 This guide assumes you are on an ubuntu machine and that your turtlebot has a RasPi 3B/3B+. This will walk you through the process of getting a turtlebot3 running Ubuntu 20.04 with ROS Noetic and the required firmware. You will need a microSD card that is at least 16GB.
 
-First plug in the microSD card to your computer. Download balena etcher and flash the robotis 3b+ noetic image onto it. It should take ~15 minutes to flash and verify the image. 
+First plug in the microSD card to your computer. Download [balena etcher](https://www.balena.io/etcher/) and flash the robotis [3b+ noetic image](https://www.robotis.com/service/download.php?no=2008) onto it. It should take ~15 minutes to flash and verify the image. 
 
 Once you have the image flashed open a terminal and open the .yaml file in the netplan directory.
- cd /media/$USER/writable/etc/netplan
-sudo vim 50-cloud-init.yaml
+`cd /media/$USER/writable/etc/netplan`
+`sudo vim 50-cloud-init.yaml`
 
 
 Then replace “WIFI_SSID” with “RBE” and “WIFI_PASSWORD” with “elm69wisest16poisoned”. This will set the turtlebot up to connect to the RBE wifi network local to ak120d. Now eject the microSD card and put it in the turtlebot.
