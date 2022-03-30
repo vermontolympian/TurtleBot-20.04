@@ -1,9 +1,5 @@
 # TurtleBot-20.04
 
-
-
-//////// CHANGE ALL OF THIS \\\\\\\\
-
 This guide assumes you are on an ubuntu machine and that your turtlebot has a RasPi 3B/3B+. This will walk you through the process of getting a turtlebot3 running Ubuntu 20.04 with ROS Noetic and the required firmware. You will need a microSD card that is at least 16GB.
 
 First plug in the microSD card to your computer. Download [balena etcher](https://www.balena.io/etcher/) and flash the robotis [3b+ noetic image](https://www.robotis.com/service/download.php?no=2008) onto it. It should take ~15 minutes to flash and verify the image. 
